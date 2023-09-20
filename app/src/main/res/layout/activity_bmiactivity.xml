@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bmi1"
+    tools:context=".BMIActivity">
+
+    <TextView
+        android:id="@+id/BMI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="BMI Calculator"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/heighttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BMI"
+        android:layout_marginLeft="94dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="94dp"
+        android:layout_marginBottom="25dp"
+        android:background="#30FFFAFA"
+        android:hint="Height (m)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="23sp" />
+
+    <EditText
+        android:id="@+id/weighttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heighttxt"
+        android:layout_marginLeft="94dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="94dp"
+        android:layout_marginBottom="25dp"
+        android:background="#30FFFAFA"
+        android:hint="Weight (kg)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="23sp" />
+
+
+    <Button
+        android:id="@+id/bmibtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weighttxt"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/rectangle_button1"
+        android:onClick="bmiBtn"
+        android:text="Get Result"
+        android:textColor="#254117"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/bmirestxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmibtn"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="74dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/custom_shapes"
+        android:gravity="center"
+        android:hint="BMI Result"
+        android:text=""
+        android:textColor="#046307"
+        android:textColorHint="#41A317"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/classification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmirestxt"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="0dp"
+        android:text="BMI CLASSIFICATION"
+        android:textColor="#52D017"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/underweight"
+        android:text="Underweight             Lesser - 18.5"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="0dp"
+        android:textColor="#FFA500"
+        android:layout_below="@+id/classification"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:background="#E5E4E2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/normal"
+        android:text="Normal                          18.5 - 24.9"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="0dp"
+        android:textColor="#008000"
+        android:layout_below="@+id/underweight"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:background="#FBFBF9" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/overweight"
+        android:text="Overweight                   25.0 - 29.9"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="0dp"
+        android:textColor="#FFA500"
+        android:layout_below="@+id/normal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:background="#E5E4E2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/obese"
+        android:text="Obese Class I                30.0 - 34.9"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="0dp"
+        android:textColor="#C24641"
+        android:layout_below="@+id/overweight"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:background="#FBFBF9" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/obese2"
+        android:text="Obese Class II                35.0 - 39.9"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="0dp"
+        android:textColor="#C11B17"
+        android:layout_below="@+id/obese"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:background="#E5E4E2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/obese3"
+        android:text="Obese Class III        Greater - 40.0"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="0dp"
+        android:textColor="#B21807"
+        android:layout_below="@+id/obese2"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:background="#FBFBF9" />
+
+</RelativeLayout>

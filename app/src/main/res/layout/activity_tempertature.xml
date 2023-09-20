@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TempertatureActivity"
+    android:background="@drawable/bmi1">
+
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="562dp"
+        android:background="@drawable/rectangle_button"
+        android:text="Convert"
+        android:textColor="#ffffff"
+        android:textOff="Fahrenheit -> Celsius "
+        android:textOn="Celsius -> Fahrenheit" />
+
+    <TextView
+        android:id="@+id/BMI"
+        android:layout_width="wrap_content"
+        android:layout_height="98dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:text="Temperature Converter"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtext"
+        android:layout_width="252dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginLeft="94dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="94dp"
+        android:layout_marginBottom="491dp"
+        android:background="#30FFFAFA"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="23sp" />
+
+    <Button
+        android:id="@+id/bmibtn"
+        android:layout_width="131dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="190dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginBottom="420dp"
+        android:background="@drawable/rectangle_button1"
+        android:onClick="tempBtn"
+        android:text="Get Result"
+        android:textColor="#254117"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="243dp"
+        android:layout_height="61dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="74dp"
+        android:layout_marginRight="74dp"
+        android:layout_marginBottom="327dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:hint="0"
+        android:text=""
+        android:textColor="#046307"
+        android:textColorHint="#41A317"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/solution"
+        android:layout_width="341dp"
+        android:layout_height="149dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="507dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="74dp"
+        android:layout_marginBottom="122dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#046307"
+        android:textColorHint="#41A317"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_row="0"
+        android:layout_column="5"
+        android:background="@drawable/toolbar_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="589dp">
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_baseline_info_24"
+            android:contentDescription="Menu"
+            android:onClick="aboutBtn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/menu"
+            android:paddingLeft="10dp"
+            android:text="UniVerter"
+            android:textColor="@color/colorWhite"
+            android:textSize="30dp">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginEnd="185dp"
+        android:layout_marginBottom="408dp"
+        android:background="@drawable/rectangle_button1"
+        android:onClick="cv1Button"
+        android:padding="10dp"
+        android:text="Temperature Converter"
+        android:textColor="#CA00EE"
+        android:textSize="15dp"
+        android:textStyle="bold">
+
+
+    </Button>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="371dp"
+        android:layout_marginEnd="185dp"
+        android:layout_marginBottom="212dp"
+        android:background="@drawable/rectangle_button1"
+        android:onClick="cv3Button"
+        android:padding="10dp"
+        android:text="Area of Triangle"
+        android:textColor="#CA00EE"
+        android:textSize="15dp"
+        android:textStyle="bold">
+
+    </Button>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="569dp"
+        android:layout_marginEnd="185dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/rectangle_button1"
+        android:onClick="cv55Button"
+        android:padding="10dp"
+        android:text="Area of Trapezoid"
+        android:textColor="#CA00EE"
+        android:textSize="15dp"
+        android:textStyle="bold">
+
+    </Button>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="182dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="371dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="211dp"
+        android:background="@drawable/rectangle_button1"
+        android:onClick="cv2Button"
+        android:padding="10dp"
+        android:text="Area of Rectangle"
+        android:textColor="#CA00EE"
+        android:textSize="15dp"
+        android:textStyle="bold">
+
+    </Button>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="182dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="408dp"
+        android:background="@drawable/rectangle_button1"
+        android:onClick="cv4Button"
+        android:padding="10dp"
+        android:text="BMI Calculator"
+        android:textColor="#CA00EE"
+        android:textSize="15dp"
+        android:textStyle="bold">
+
+    </Button>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="182dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="567dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/rectangle_button1"
+        android:onClick="cv6Button"
+        android:padding="10dp"
+        android:text="Area of Circle"
+        android:textColor="#CA00EE"
+        android:textSize="15dp"
+        android:textStyle="bold">
+
+    </Button>
+
+
+</RelativeLayout>
